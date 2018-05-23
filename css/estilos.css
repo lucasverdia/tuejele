@@ -24,12 +24,6 @@
   width:65%;
 }
 
-header{
-  position:fixed;
-  display:block;
-  width:100%;
-}
-
 h1{
   font-weight:normal;
   text-decoration:none;
@@ -39,8 +33,10 @@ h1{
   font-family: 'Satisfy', cursive;
 }
 
-header nav{
-  margin-bottom:0%;
+header{
+  position:fixed;
+  display:block;
+  margin-bottom:0;
   background:#fff;
   width:100%;
 }
@@ -62,20 +58,17 @@ header nav ul li a{
   font-family: 'Hind Siliguri', sans-serif;
   color:#6E3E6F;
   padding:20px;
-  display:block;
+  display:flex;
+  flex-direction:column;
   text-decoration:none;
-  background:#fff;
+
 }
 
 header nav ul li a:hover{
   padding-bottom:17px;
   background:#F4F4F4;
   color:#6E3E6F;
-  border-bottom:#6E3E6F 3px solid;
-}
-
-header nav ul li span{
-  padding:10px;
+  border-bottom:#6E3E6F 3.5px solid;
 }
 
 img{
@@ -116,81 +109,88 @@ footer{
   padding:10px;
 }
 
+.youtube a{
+
+}
+
+.instagram a{
+
+}
+
+.facebook a{
+
+}
+
 .youtube a, .instagram a, .facebook a{
-  text-decoration:none;
   color:#fff;
+  text-decoration:none;
   font-size:30px;
 }
 
 .redes_sociales{
-  margin-top:1%;
+  margin-top:17px;
   font-size:20px;
   margin-right:25px;
   float:right;
 }
 
+input,label{
+  display:none;
+}
+
 @media screen and (max-width:825px){
 
-  header nav ul li a:hover{
-    box-sizing:border-box;
-    border-bottom:none;
-    border-right:#6E3E6F 3px solid;
-  }
 
 img,iframe,.cita{
-  width:80%;
+  width:95%;
 }
 
 .redes_sociales{
     margin-right:10px;
 }
 
-header nav{
-  padding-bottom:700px;
-  width:40%;
-  height:100%;
-  margin:0;
-  position:fixed;
-  left:-100%;
-}
-
-h1{
+#btn_mn{
   display:none;
 }
 
-.ache4{
-  font-size:30px;
-  font-weight:normal;
+h1{
+  display:block;
 }
+
+header label{
+  cursor:pointer;
+  display:block;
+  float:right;
+  font-size:30px;
+  padding:15px;
+  color:#6E3E6F;
+}
+
+header ul li a :hover{
+  border-bottom:0;
+  border-bottom:#F4F4F4 3px solid;
+}
+
+nav{
+  background:#F4F4F4;
+  display:block;
+  width:100%;
+  top:67px;
+  margin:0;
+  position:fixed;
+  transform: translateX(-100%);
+  transition:all 0.3s;
+}
+
+#btn_mn:checked ~ nav {
+  transform: translateX(0%);
+}
+
 
 header nav ul li {
   display:block;
   float:none;
-  border-bottom:1px solid #fff;
 }
 
-.menu_bar{
-  display:block;
-  width:100%;
-  background:#ccc;
-}
-
-.menu_bar .bt-menu{
-  font-size:30px;
-  display:block;
-  padding:15px;
-  background:#fff;
-  border-bottom:1px solid #F2F1F1;
-  color:#6E3E6F;
-  text-decoration:none;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
-  font-family: 'Satisfy', cursive;
-}
-
-.menu_bar span{
-  float:right;
-}
 
 }

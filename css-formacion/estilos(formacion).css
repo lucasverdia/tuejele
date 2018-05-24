@@ -20,34 +20,30 @@ header{
   width:100%;
 }
 
-.menu_bar{
-  display:none;
-}
-
-header nav ul{
+nav ul{
   overflow:hidden;
   list-style:none;
 }
 
-header nav ul li {
+nav li {
   float:right;
 }
 
-header nav ul li a{
+nav a{
   font-family: 'Hind Siliguri', sans-serif;
   color:#6E3E6F;
-  padding:20px;
+  padding:21px;
   display:flex;
   flex-direction:column;
   text-decoration:none;
 
 }
 
-header nav ul li a:hover{
-  padding-bottom:17px;
+nav a:hover{
+
   background:#F4F4F4;
   color:#6E3E6F;
-  border-bottom:#6E3E6F 3.5px solid;
+
 }
 
 input,label{

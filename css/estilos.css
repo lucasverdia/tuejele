@@ -71,6 +71,10 @@ header{
   color:#6E3E6F;
 }
 
+input,label{
+  display:none;
+}
+
 img{
   display:block;
   float:none;

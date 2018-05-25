@@ -41,16 +41,20 @@ header{
   width:100%;
 }
 
-nav ul{
+.nav2{
+  display:none;
+}
+
+.nav1 ul{
   overflow:hidden;
   list-style:none;
 }
 
-nav li {
+.nav1 li {
   float:right;
 }
 
-nav a{
+.nav1  a{
   font-family: 'Hind Siliguri', sans-serif;
   color:#6E3E6F;
   padding:21px;
@@ -60,11 +64,11 @@ nav a{
 
 }
 
-nav a:hover{
-
+.nav1 a:hover{
+  padding-bottom:21px;
+  border-bottom:#6E3E6F 2px solid;
   background:#F4F4F4;
   color:#6E3E6F;
-
 }
 
 img{
@@ -162,12 +166,16 @@ header label{
   color:#6E3E6F;
 }
 
-header ul li a :hover{
-  border-bottom:0;
-  border-bottom:#F4F4F4 3px solid;
+.nav2 a{
+  font-family: 'Hind Siliguri', sans-serif;
+  color:#6E3E6F;
+  padding:21px;
+  display:flex;
+  flex-direction:column;
+  text-decoration:none;
 }
 
-nav{
+.nav2{
   background:#F4F4F4;
   display:block;
   width:100%;
@@ -178,12 +186,20 @@ nav{
   transition:all 0.3s;
 }
 
-#btn_mn:checked ~ nav {
+#btn_mn:checked ~ .nav2 {
   transform: translateX(0%);
 }
 
+.nav2 a:hover{
+  background:#DADADA;
+}
 
-header nav ul li {
+.nav1{
+  display:none;
+}
+
+
+.nav2 ul li {
   display:block;
   float:none;
 }

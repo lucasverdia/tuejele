@@ -33,6 +33,10 @@ header{
   float:right;
 }
 
+p{
+  text-align:justify;
+}
+
 .nav1  a{
   font-family: 'Hind Siliguri', sans-serif;
   color:#6E3E6F;

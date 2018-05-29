@@ -74,6 +74,7 @@ h2,h3,h4,h5,h6{
 }
 
 .galeria7 p{
+    text-align:justify;
     margin-top:15px;
     font-family: 'Hind Siliguri', sans-serif;
     color:#5B5B5B;
